@@ -1,0 +1,32 @@
+#dvslider{
+   width: 1000px;
+   height: 300px;
+   border: 1px solid #000;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   overflow: cover;
+   background-repeat: no-repeat;
+   background-size: cover ; 
+}
+.btslider{
+    background-color: rgba(0,0,0,0.4);
+    height: 30%;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    margin: 10px;
+    border: none;
+}
+#load{
+    width: 100%;
+    height: 5px;
+    margin-top: 25%;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+#barra{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+
+}
