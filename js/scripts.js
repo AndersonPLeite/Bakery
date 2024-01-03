@@ -1,11 +1,3 @@
-const frm = document.querySelector("form")
-const resp = document.querySelector("h1")
-
-frm.addEventListener("submit", (e) =>{
-    const nome = frm.inNome.value
-    resp.innerText = "Olá " + nome + " seja bem vindo ao Website Diana Padaria & Confeitaria"
-    e.preventDefault()
-})
 
 var imgs = [];
 var slider;
@@ -58,3 +50,7 @@ function anima(){
     window.requestAnimationFrame(anima);
 }
 window.addEventListener("load",inicia);
+window.addEventListener("scroll",function(){
+    let header = this.document.querySelector('#header')
+    header.classList.toggle('rolagem',window.scrollY > 0)
+})
