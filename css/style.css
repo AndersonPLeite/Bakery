@@ -37,6 +37,7 @@ header{
     transition: 1s;
 }
 header.rolagem{
+    background-image: linear-gradient(45deg, #dd1364d3 ,#e93aa3d3);
     background-color: #dd1364d3;
     padding: 30px 4%;
 }
@@ -51,8 +52,16 @@ header ul li{
     margin: 0 40px;
 }
 header ul li a{
-    color: rgb(232, 99, 10);
+    color: var(--laranja);
     text-decoration: none;
+    font-size: larger;
+}
+header ul li a:hover{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: .5s;
 }
 .btn-contato button{
     width: 90px;
@@ -63,6 +72,13 @@ header ul li a{
     color: white;
     cursor: pointer;
     transition: .2s;
+}
+.btn-contato button:hover{
+    width: 130px;
+    height:60px ;
+    font-size: larger;
+    font-weight: bold;
+
 }
 
 .texto{
