@@ -15,26 +15,26 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500vh;
-}
-.container{
-    max-width: 1280px;
-    margin: auto;
-}
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 100vh;
+    height: 200vh;
+    margin: 0;
 }
 header{
+    height: 25vh;
     width: 100%;
     padding: 60px 4%;
     position: fixed;
     top: 0;
     left: 0;
     transition: 1s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
 }
 header.rolagem{
     background-image: linear-gradient(45deg, #dd1364d3 ,#e93aa3d3);
@@ -90,6 +90,28 @@ header ul li a:hover{
     animation: degrade, 10s, linear infinite alternate;
     -webkit-text-fill-color: transparent;
 }
+main{
+    height: 50vh;
+}
+#corrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: auto;
+    justify-content: center;
+    position: fixed;
+}
+.container2{
+    display: flex;
+    align-content: center;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX();
+}
+#img2{
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
 @keyframes degrade{
     0%{
         background-position-x: 0%;
@@ -99,6 +121,7 @@ header ul li a:hover{
     }
 }
 footer{
+    height: 25vh;
     display: flex;
     flex-direction: unset;
 }

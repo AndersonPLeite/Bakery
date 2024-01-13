@@ -1,13 +1,17 @@
+const imgs = document.getElementById("img2");
+const img = document.querySelectorAll("#img2 img");
 
-var imgs = [];
-var slider;
-var imgAtual;
-var maxImg;
-var tmp;
-var tempoTroca;
-var tempo;
-var load;
+let idx = 0 
+    function carrossel(){
+        idx++;
+        if(idx > img.length - 1){
+            idx = 0;
+        }
 
+        imgs.style.transform = 'translateX(${-idx * 500}px)';
+
+    }
+    setInterval(carrossel, 1800);/*
 function preCarregamento(){
     var s = 1;
     for(var i=0;i<5;i++){
@@ -49,6 +53,7 @@ function anima(){
     load.style.width = tempo+ "%";
     window.requestAnimationFrame(anima);
 }
+*/
 window.addEventListener("load",inicia);
 window.addEventListener("scroll",function(){
     let header = this.document.querySelector('#header')
