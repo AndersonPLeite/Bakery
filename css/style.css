@@ -9,119 +9,17 @@
     box-sizing: border-box;
     font-family: 'Agbalumo', serif;
 }
-body{
-    background-image: url(../assets/candy.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vh;
-    height: 200vh;
-    margin: 0;
-}
-header{
-    height: 25vh;
-    width: 100%;
-    padding: 60px 4%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 1s;
+#container{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+}
+ul , li{
+    display: flex;
     justify-content: space-between;
-    margin: auto;
+    padding: 20px;
 }
-header.rolagem{
-    background-image: linear-gradient(45deg, #dd1364d3 ,#e93aa3d3);
-    background-color: #dd1364d3;
-    padding: 30px 4%;
-}
-header.rolagem a{
-    color:white;
-}
-header ul{
-    list-style-type: none;
-}
-header ul li{
-    display: inline-block;
-    margin: 0 40px;
-}
-header ul li a{
-    color: var(--laranja);
+ul ,li, a{
     text-decoration: none;
-    font-size: larger;
-}
-header ul li a:hover{
-    color: white;
-    font-size: xx-large;
-    font-weight: bold;
-    text-decoration: underline;
-    transition: .5s;
-}
-.btn-contato button{
-    width: 90px;
-    height: 37px;
-    border: 0;
-    border-radius: 5px;
-    background-color: #ffa500;
-    color: white;
-    cursor: pointer;
-    transition: .2s;
-}
-.btn-contato button:hover{
-    width: 130px;
-    height:60px ;
-    font-size: larger;
-    font-weight: bold;
-
-}
-
-.texto{
-    font-size: 90px;
-    text-transform: uppercase;
-    color: white;
-    background: linear-gradient(45deg,orange,rgb(223, 21, 173),rgb(232, 93, 193)); /*ou to right,left bottom*/
-    background-size: 400% 100%;
-    animation: degrade, 10s, linear infinite alternate;
-    -webkit-text-fill-color: transparent;
-}
-main{
-    height: 50vh;
-}
-#corrossel{
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-    height: 500px;
-    width: auto;
-    justify-content: center;
-    position: fixed;
-}
-.container2{
-    display: flex;
-    align-content: center;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX();
-}
-#img2{
-    object-fit: cover;
-    height: 500px;
-    width: 500px;
-}
-@keyframes degrade{
-    0%{
-        background-position-x: 0%;
-    }
-    100%{
-        background-position: 400%;
-    }
-}
-footer{
-    height: 25vh;
-    display: flex;
-    flex-direction: unset;
 }
