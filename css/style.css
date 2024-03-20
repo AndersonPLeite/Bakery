@@ -9,11 +9,19 @@
     box-sizing: border-box;
     font-family: 'Agbalumo', serif;
 }
+#navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+}
 #container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    font-size: x-large;
 }
 ul , li{
     display: flex;
@@ -22,4 +30,70 @@ ul , li{
 }
 ul ,li, a{
     text-decoration: none;
+}
+#formu{
+    background: #590959;
+}
+
+ #navigation li > a{
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.login{
+    margin-top: 60px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+}
+.login a{
+    font-size: 20px;
+}
+body > h1{
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: normal;
+}
+.login h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+}
+.login input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+}
+#formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+}
+.login label{
+    padding: 8px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 15px;
+}
+.btn{
+    color: #fff;
+    background-color: rgba(62, 218, 230, 0.539);
+    margin-top: 3px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.btn:hover{
+    background: rgba(44, 74, 241, 0.539);
+}
+.btn-contato:hover{
+  color: #590959;
+  background-color: #fff; 
+}
+.esq{
+    color: #fff;
 }
