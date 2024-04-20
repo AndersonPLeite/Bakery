@@ -8,23 +8,58 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header id="container">
-            <img src="assets/logo.png" alt="logoDiana">
-                <nav>
+    <header class="menu">
+            
+                <nav class="navigation">
+                    <img src="assets/logo.png" alt="logoDiana">
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="">Produtos</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="produtos">Produtos</a>
+                                <ul class="conteudo-dropdown">
+                                    <li><a href="#">Doces</a></li>
+                                    <li><a href="#">Salgados</a></li>
+                                    <li><a href="#">Pães</a></li>
+                                    <li><a href="#">Bolos e Tortas</a></li>
+                                </ul>
+                            </li>
                         <li><a href="">Promoções</a></li>
                         <li><a href="">Sobre nós</a></li>
                     </ul>
+                    <div class="btn-contato">
+                        <a href="login.html">Cadastre-se</a>
+                    </div>
                 </nav>
-            <div class="btn-contato">
-                <a href="login.html"><button class="btn-contato">Cadastre-se</button></a>
-            </div>
+            
         
     </header>
     <main>
-    
+        <section>
+            <div class="cabecalho">
+                <h1>Seja bem vindo!</h1>
+            </div>
+        </section>
+        
+        <section class="cards">
+            <div class="card card1">
+                <img src="assets/20220714_081311.jpg" alt="imagem1">
+                <h1>Doces</h1>
+                <p>Valor R$120,00 (100 unidades)</p>
+                <button class="btn">Encomendar</button>
+            </div>
+            <div class="card card2">
+                <img src="assets/folhados.jpg" alt="imagem2">
+                <h1>Folhados</h1>
+                <p>Valor R$5,00</p>
+                <button class="btn">Encomendar</button>
+            </div>
+            <div class="card card3">
+                <img src="assets/boloCenoura.jpg" alt="imagem3">
+                <h1>Bolos</h1>
+                <p>Valor R$10,00</p>
+                <button class="btn">Encomendar</button>
+            </div>
+        </section>
     </main>   
     <footer>
         <!--<p><a href="https://www.instagram.com/">Docesdadrika22</a></p>-->
