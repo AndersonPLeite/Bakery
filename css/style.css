@@ -13,7 +13,7 @@ body{
     background-image: url(../assets/candy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
+    height: 200vh;
 }
 
 ul{
@@ -27,6 +27,9 @@ ul li{
 }
 li{
    float: left; 
+   margin-right: 3rem;
+   gap: 4rem;
+   
 }
 li a{
     text-decoration: none;
@@ -241,4 +244,38 @@ button:hover{
     transition: 0.5s background;
     background-color: rgb(63, 194, 220);
     text-align: center;
+}
+
+.bainner{
+    height: 600px;
+    background-color: #faebd7;
+    padding: 2rem;
+    
+    
+}
+.bainner .div1{
+    height: 70%;
+    width: 100%;
+    background-color: #ffa500;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+.bainner .div2{
+    height: 30%;
+    width: 100%;
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr 1fr ;
+    background-color: chocolate;
+    padding: 1rem;
+    column-gap: 1rem;
+    border-radius: 0.7rem;
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+    }
 }
