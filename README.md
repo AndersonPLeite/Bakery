@@ -1,4 +1,4 @@
-# Briefing para Projeto de Website - Diana Padaria e Confeitaria
+# Briefing para Projeto de Website - Padaria e Confeitaria
 ## Informações Gerais
 - Nome da Empresa: Diana Padaria e Confeitaria
 
