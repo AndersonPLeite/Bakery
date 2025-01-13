@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body class="bg-login">
+    <div id="formulario">
+        <h1 id="msg">Cadastre-se e receba todas as nossas promoções</h1>
+            <form action="#" class="login" autocomplete="on">
+                <label for="nome">Nome Completo: </label>
+                <input type="text" name="username" autofocus required><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email"><br>
+                <label for="datanasc">Data de nascimento:</label>
+                <input type="date" name="datanasc" max="1950-01-01" required><br>
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="fone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required><br>
+                <label for="datanasc">Senha</label>
+                <input type="password" name="senha" required>
+                <button class="btn"><a href="indexPadaria.html">Enviar</a></button> 
+                <div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

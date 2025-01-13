@@ -180,11 +180,7 @@ main{
     border-top-right-radius: 10px;
 }
 
-.btn:hover{
-    transition: 0.5s background;
-    background-color: rgb(63, 194, 220);
-    text-align: center;
-}
+
 
 .bainner{
     height: 50%;
@@ -237,7 +233,7 @@ main{
     color: #fff;
 }
 .description-about{
-    width: 50%;
+   width: 50%;
    padding: 1rem;
    float: right;
    margin-right: 15rem;
@@ -312,6 +308,10 @@ main{
     padding: 10px 0;
     font-size: 16px;
 }
+input{
+    border-radius: 10px;
+    background-color:pink;
+}
 #formulario{
     display: flex;
     flex-direction: column;
@@ -333,14 +333,14 @@ main{
     border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
 }
+
 .btn:hover{
-    background: rgba(44, 74, 241, 0.539);
-}
-.btn-contato:hover{
-  color: #fff;
+    transition: 0.5s background;
+    background-color: rgb(63, 73, 220);
+    text-align: center;
 }
 .esq{
     color: #fff;
@@ -364,4 +364,43 @@ footer{
         display: flex;
         flex-direction: column;
     }
+}
+
+/*========================================= LOGIN ==================================================================*/
+.login{
+    background-image: linear-gradient(to right,rgb(204, 97, 129), purple);
+    
+}
+
+.bg-login{
+    background-color: pink;
+    height: 100vh;
+}
+
+
+/*========================================= HOME ==================================================================*/
+.banner{
+    height: 100vh;
+    background-image: url(../assets/montar-padaria-da-lucro.jpg);
+    background-size: cover;
+    color: white;
+    opacity: .74;
+}
+.mennu{
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+    font-size: 7rem;
+    font-weight: bold;
+    
+}
+.mennu li{
+    padding: 4rem;
+}
+.products{
+    height: 100vh;
 }
