@@ -7,3 +7,23 @@ Inspirações:
 https://confeitariaberola.com/site/content/home/
 https://www.imperatrizdocesfinos.com.br/
 https://padokafloripa.com.br/
+
+
+
+
+/my-app
+├── /public               # arquivos estáticos (html, css, js, img)
+├── /src
+│   ├── /controllers      # lógica das rotas
+│   ├── /routes           # definição das rotas
+│   ├── /services         # lógica de negócio (opcional)
+│   ├── /middlewares      # autenticação, validação, etc
+│   ├── /prisma
+│   │   ├── client.js     # cliente Prisma instanciado
+│   │   └── schema.prisma
+│   └── /utils            # funções utilitárias
+├── .env                  # variáveis de ambiente (ex: DB_URL)
+├── package.json
+├── prisma/
+│   └── schema.prisma     # definição dos modelos Prisma
+└── index.js              # arquivo principal do servidor
