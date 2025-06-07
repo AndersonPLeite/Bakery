@@ -1,12 +1,5 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -14,11 +7,78 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model usuario {
-  id        String   @id @default(uuid()) @map("_id") @db.Uuid
-  name      String?
+model Cliente {
+  id        Int      @id @default(autoincrement())
+  nome      String
   email     String?  @unique
-  password  String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  telefone  String?
+  endereco  String?
+  pedidos   Pedido[]
+}
+
+model Categoria {
+  id       Int       @id @default(autoincrement())
+  nome     String
+  produtos Produto[]
+}
+
+model Produto {
+  id          Int       @id @default(autoincrement())
+  nome        String
+  descricao   String?
+  preco       Float
+  categoria   Categoria @relation(fields: [categoriaId], references: [id])
+  categoriaId Int
+  itensPedido ItemPedido[]
+}
+
+model Pedido {
+  id         Int         @id @default(autoincrement())
+  cliente    Cliente?    @relation(fields: [clienteId], references: [id])
+  clienteId  Int?
+  dataPedido DateTime    @default(now())
+  status     String      @default("pendente")
+  total      Float
+  itens      ItemPedido[]
+  pagamento  Pagamento?
+}
+
+model ItemPedido {
+  id         Int      @id @default(autoincrement())
+  pedido     Pedido   @relation(fields: [pedidoId], references: [id])
+  pedidoId   Int
+  produto    Produto  @relation(fields: [produtoId], references: [id])
+  produtoId  Int
+  quantidade Int
+  precoUnit  Float
+}
+
+model Pagamento {
+  id           Int     @id @default(autoincrement())
+  pedido       Pedido  @relation(fields: [pedidoId], references: [id])
+  pedidoId     Int     @unique
+  dataPagamento DateTime @default(now())
+  formaPagamento String
+  valorPago     Float
+}
+
+model Fornecedor {
+  id       Int     @id @default(autoincrement())
+  nome     String
+  cnpj     String? @unique
+  telefone String?
+  email    String?
+  endereco String?
+}
+
+model Funcionario {
+  id             Int     @id @default(autoincrement())
+  nome           String
+  cpf            String  @unique
+  telefone       String?
+  email          String?
+  cargo          String
+  dataContratacao DateTime
+  salario        Float
+  senha         String
 }
