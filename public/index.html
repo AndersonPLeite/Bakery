@@ -1,101 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diana Padaria&Confeitaria</title>
-    <link rel="shortcut icon" href="assets/padaria.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padaria Artesanal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="menu">
-                <nav class="navigation">
-                    <img src="assets/logo.png" alt="logoDiana" id="logo">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="produtos">Produtos</a>
-                                <ul class="conteudo-dropdown">
-                                    <li><a href="#">Doces</a></li>
-                                    <li><a href="#">Salgados</a></li>
-                                    <li><a href="#">Pães</a></li>
-                                    <li><a href="#">Bolos e Tortas</a></li>
-                                </ul>
-                            </li>
-                        <li><a href="">Promoções</a></li>
-                        <li><a href="">Sobre nós</a></li>
-                    </ul>
-                    <a class="btn-login" href="login.html">Cadastre-se</a>
-                </nav>  
-    </header>
-    <main>
-        <section class="bainner">
-            <h1 class="animate__animated animate__bounce" id="titulo">Sejam Bem vindos</h1>
-             <div class="div1">
-        
-            </div>
-            <div class="div2">
-                <div class="card card1 ">
-                    <img src="assets/20220714_081311.jpg" alt="imagem1">
-                    <h1>Doces</h1>
-                    <p>Valor R$120,00 (100 unidades)</p>
-                    <button class="btn">Encomendar</button>
-                </div>
-                <div class="card card2">
-                    <img src="assets/folhados.jpg" alt="imagem2">
-                    <h1>Folhados</h1>
-                    <p>Valor R$5,00</p>
-                    <button class="btn">Encomendar</button>
-                </div>
-                <div class="card card3">
-                    <img src="assets/bolo.jpg" alt="imagem3">
-                    <h1>Bolos</h1>
-                    <p>Valor R$10,00</p>
-                    <button class="btn">Encomendar</button>
-                </div>
-                <div class="card card3">
-                    <img src="assets/boloCenoura.jpg" alt="imagem3">
-                    <h1>Bolos</h1>
-                    <p>Valor R$10,00</p>
-                    <button class="btn">Encomendar</button>
-                </div>
-            </div>
-        </section>
-        <section class="hidden">
-            <div class="logos"> 
-                <div class="hidden">
-                    <img class="avatar" src="assets/paoperfeito.jpg" alt="avatar">
-                </div>
-                <div class="hidden">
-                    <img class="avatar" src="assets/pastel_frito.jpg" alt="avatar">
-                </div>
-                <div class="hidden">
-                    <img class="avatar" src="assets/massaPodre.jpg" alt="avatar">
-                </div>
-                <div class="hidden">
-                    <img class="avatar" src="assets/pao.jpg" alt="avatar">
-                </div>
-            </div>
-        </section>
-        <section class="description">
-            
-          <img class="fachada" src="assets/fachada.jpg" alt="fachada-bakery">
-          <div class="description-about">
-            <h1 id="description-title">Sobre nós</h1>
-            <p id="description">Na Diana Panificadora e Confeitaria, tradição e qualidade caminham lado a lado para oferecer o melhor em pães,
-                doces e produtos artesanais. Com um ambiente acolhedor e atendimento atencioso, 
-                somos especializados em produzir delícias fresquinhas todos os dias, como pães de fermentação natural, bolos, 
-                tortas e salgados irresistíveis.
-    
-                Aqui, cada detalhe é pensado para proporcionar uma experiência única, seja no café da manhã, no lanche da tarde ou em 
-                encomendas para momentos especiais. Venha nos visitar e descubra sabores que fazem a diferença!
-            </p>
-          </div>
-          
-        </section>
-        
-    </main>   
-    <script src="js/scripts.js"></script>
+  <header class="top-header">
+    <div class="container">
+      <h1 class="logo">Diana Padaria & Confeitaria</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#receitas">Receitas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Tradição e sabor na sua mesa</h2>
+      <p>Receba nossos pães artesanais na porta da sua casa.</p>
+    </div>
+  </section>
+
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <h2>Nossos Produtos</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="./images/pao.jpg" alt="Pão Francês">
+          <h3>Pão Francês</h3>
+          <p>R$ 0,50 / unidade</p>
+        </div>
+        <div class="card">
+          <img src="./images/cacetinho.jpg" alt="Pão Integral">
+          <h3>Pão Integral</h3>
+          <p>R$ 3,00 / unidade</p>
+        </div>
+        <div class="card">
+          <img src="./images/negamaluca.jpg" alt="Croissant">
+          <h3>Croissant</h3>
+          <p>R$ 4,50 / unidade</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Weblogic Software. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Exemplo simples: rolar para seções
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>

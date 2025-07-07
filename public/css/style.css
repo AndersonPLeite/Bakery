@@ -1,417 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
-:root {
-    --laranja: #ffa500;
-    --salmao: #dd1364d3;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Agbalumo', serif;
-}
-body{
-    background-color:#fff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 270vh;
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fdf5e6;
+  color: #3e2c1c;
 }
 
-ul{
-    list-style: none;
-    padding: 0;
-    overflow: hidden;
-    margin-right: 4.5rem;
-}
-ul li{
-    margin-right: 2rem;
-}
-li{
-   float: left; 
-   margin-right: 3rem;
-   gap: 4rem;
-   
-}
-li a{
-    text-decoration: none;
-    padding: 8px 16px;
-    display: block;
-    color: #fff;
-    font-size: x-large;
- 
-}
-a{
-    text-decoration: none;
-    color: #fff;
-    font-size: x-large;
-}
-#logo{
-    margin-left: 2em;
-    width: 8rem;
-    height: 8rem;
-}
-.menu{
-    display: flex;
-    background-image: linear-gradient(to right,pink, purple);
-    box-shadow: 1px 1px 4px purple;
-    color: #fff;
-    height: 6%;
-}
-.menu .navigation{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 20rem;
-    gap: 10rem;
-    padding-left: 5rem;
+.top-header {
+  background: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  background-color: #4b2e1d;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.navigation{
-    gap: 3rem;
-    z-index: 2;
-    width: 80%;
+.logo {
+  color: #fff8dc;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-left: 30px;
+  font-weight: bold;
 }
 
-.navigation a{
-    text-decoration: none;
-    transition: 1s;
-    font-weight: bold;
-    color: #fff;
-}
-.navigation a:hover{
-    color: white;
-    text-decoration: underline;
-}
-.conteudo-dropdown{
-    display: none;
-    font-weight: bold;
-    position: absolute;
-    cursor: pointer;
-    padding: 3px 3px 3px 3px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    color: #fff;
-    border-radius: 10px;
-}
-.conteudo-dropdown li{
-    float: none;
-}
-.conteudo-dropdown ul li{
-    color:white;
-    padding: 12px, 16px;
-    transition: 1s;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-   
-}
-.conteudo-dropdown a:hover{
-    cursor: pointer;
-    color: white;
-    
-    transition: 1s;
-    padding: 0.8em;
-    border-radius: 0.7em;
-
-    
-}
-.conteudo-dropdown a:hover #msg{
-    display: none;
-}
-.dropdown:hover .conteudo-dropdown{
-    display: block;
-}
-button{
-   float: right;
-   margin-right: 4.5rem;
-   font-size: larger;
-   height: 44px;
-   width: 160px;
-   border-radius: 7px;
-   align-items: center;
-   justify-content: center;
-   border: none;
-   background-image: linear-gradient(to right,rgb(238, 157, 202), purple);
-   color: #fff;
-}
-/*================= MAIN =============================*/
-main{
-    height: 250vh;
-}
-#msg{ 
-    color: rgb(138, 15, 138);
-    text-align: center;
-    font-size: 50px;
-    margin-top: 2rem;
-    padding: 2rem;
-}
-#msg:hover{
-    color: #fff;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.cards{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 14rem;
-}
-.card{
-    margin: 50px;
-    margin-top: 0;
-    background-color:#ef67ef;
-    color: #202020;
-    width: 300px;
-    height: 400px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    font-size: 15px;
-}
-.card>img{
-    width: 100%;
-    height: 70%;
-    border-top-left-radius: 10px ;
-    border-top-right-radius: 10px;
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
 }
 
-
-
-.bainner{
-    height: 33%;
-    background-image: linear-gradient(to right,pink, purple);
-    padding: 2rem;
-}
-.bainner .div1{
-    height: 25rem;
-    width: 100%;
-    background-image: linear-gradient(to right,pink, purple);
-    padding: 1rem;
-    border-radius: 0.7rem;
-    margin-top: 10rem;
-    margin-bottom: 0.5rem;
-}
-.bainner .div2{
-    height: 30rem;
-    width: 90%;
-    display: grid;
-    margin: auto;
-    grid-template: auto / 1fr 1fr 1fr 1fr ;
-    background-image: linear-gradient(to right,pink, purple);
-    padding: 1rem;
-    column-gap: 1rem;
-    border-radius: 0.7rem;
-    margin-top: -400px;
-}
-.description{
-    height: 33%;
-    background-image: linear-gradient(to right,pink, purple);
-}
-.fachada{
-    float: left;
-    margin-left: 4.4rem;
-    margin-top: 4rem;
-    border-radius: 10px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    width: 600px;
-    height: 400px;
-}
-#description{
-    font-size: 20px;
-   
-    margin-left: 7rem;
-    color: #fff;
-    padding-left: 3rem;
-}
-#description-title{
-    margin-left: 10rem;
-    margin-top: 2rem;
-    color: #fff;
-}
-.description-about{
-   width: 50%;
-   padding: 1rem;
-   float: right;
-   margin-right: 15rem;
+.nav-links li {
+  margin: 0 15px;
 }
 
-.hidden{
-    height: 33%;
-    gap: 20px;
-  
-    transition: all 2s t;
-    transform: translateX(-100%);
-}
-.show{
-    transform: translateX(0);
-    transition: all 2s ;
+.nav-links a {
+  color: #fff8dc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
-.logos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 10rem;
-}
-.avatar{
-    width: 300px;
-    height: 400px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 5px;
+.nav-links a:hover {
+  color: #fdd835;
 }
 
-.logos :nth-child(2){
-    transition-delay: 400ms;
-}
-.logos :nth-child(3){
-    transition-delay: 700ms;
-}
-.logos :nth-child(4){
-    transition-delay: 1000ms;
-}
-
-/*====================================================================================*/
-.cabecalho{
-    width: 100%;
-    height: 30vh;
-    align-items: center;
-}
-.cabecalho h1{
-    align-items: center;
-    text-align: center;
-    margin-top: 70px;
-    color: darkmagenta;
-    font-size: x-large;
-}
-.login{
-    margin-top: 60px;
-    background: rgba(0,0,0,.5);
-    border-radius: 10px;
-    width: 400px;
-    padding: 40px;
-}
-.login a{
-    font-size: 20px;
-}
-.login h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
-    color: white;
-}
-.login input{
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    margin-top: 0.3rem;
-}
-input{
-    border-radius: 10px;
-    background-color:pink;
-    color: white;
-    margin-top: 0.3rem;
-}
-input:focus{
-    outline: none;
-}
-.formulario label{
-    margin-bottom: 2rem;
-}
-#formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 30vh;
-    margin-bottom: 3rem;
-    padding: 4rem;
-}
-.login label{
-    padding: 8px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 15px;
-}
-.btn{
-    color: #fff;
-    background-color: rgba(62, 218, 230, 0.539);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    text-align: center;
+.hero {
+  background-image: url('https://cdn.pixabay.com/photo/2017/06/27/08/40/bread-2448667_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff8dc;
+  text-align: center;
+  padding: 20px;
 }
 
-.btn:hover{
-    transition: 0.5s background;
-    background-color: rgb(63, 73, 220);
-    text-align: center;
-}
-.esq{
-    color: #fff;
-    border-radius: 5px;
-    margin-top: 1rem;
-}
-/*================================================================================================*/
-
-/*================================================================================================*/
-footer{
-    position: absolute;;
-    background-color: rgb(238, 157, 202);
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    height: 20%;
-    width: 100%;
-}
-@media screen and (max-width: 400px) {
-    body{
-        height: 200vh;
-        display: flex;
-        flex-direction: column;
-    }
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #000;
 }
 
-/*========================================= LOGIN ==================================================================*/
-.login{
-    background-image: linear-gradient(to right,rgb(204, 97, 129), purple);
-    
+.hero-content p {
+  font-size: 20px;
+  text-shadow: 1px 1px 3px #000;
 }
 
-.bg-login{
-    background-color: pink;
-    height: 100vh;
+.produtos {
+  background-color: #fffaf0;
+  padding: 60px 20px;
+  text-align: center;
 }
 
- input{
-    border: none;
+.produtos h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #6d4c41;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
 
-/*========================================= HOME ==================================================================*/
-.banner{
-    height: 100vh;
-    background-image: url(../assets/montar-padaria-da-lucro.jpg);
-    background-size: cover;
-    color: white;
-    opacity: .74;
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 200px;
+  transition: transform 0.3s;
 }
-.mennu{
-    height: 30rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 4rem;
-    font-size: 7rem;
-    font-weight: bold;
-    
+
+.card:hover {
+  transform: scale(1.05);
 }
-.mennu li{
-    padding: 4rem;
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
-.products{
-    height: 100vh;
+
+.card h3 {
+  margin: 0 0 10px 0;
+  color: #5d4037;
+}
+
+.card p {
+  margin: 0;
+  color: #8d6e63;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #4b2e1d;
+  color: #fff8dc;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
 }
