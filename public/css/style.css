@@ -58,7 +58,7 @@ body {
   background-image: url('https://cdn.pixabay.com/photo/2017/06/27/08/40/bread-2448667_1280.jpg');
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 210px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,19 +80,20 @@ body {
 
 .produtos {
   background-color: #fffaf0;
-  padding: 60px 20px;
+  padding: 20px 15px;
   text-align: center;
 }
 
 .produtos h2 {
-  font-size: 32px;
+  font-size: 24px;
   margin-bottom: 40px;
+  margin-right: 70px;
   color: #6d4c41;
 }
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 30px;
 }
