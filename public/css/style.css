@@ -4,32 +4,43 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #fdf5e6;
-  color: #3e2c1c;
+  background-color: #FFF1F5;
+  color: #5A3A3A;
 }
 
 .top-header {
-  background: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
-  background-color: #4b2e1d;
-  padding: 20px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   background: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+   background: linear-gradient(135deg, #FADADD, #ce799c);
+   padding: 20px 0;
+   box-shadow: 0 2px 8px rgba(192,108,132,0.3);
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
 }
 
 .logo {
-  color: #fff8dc;
+  color: #5A3A3A;
   font-size: 32px;
   text-transform: uppercase;
-  margin-left: 30px;
+  margin-left: 85px;
   font-weight: bold;
 }
 
+.logo:hover {
+  color: #C06C84;
+}
+
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  color: #5A3A3A;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
 .nav-links {
@@ -43,7 +54,7 @@ body {
 }
 
 .nav-links a {
-  color: #fff8dc;
+   color: #5A3A3A;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
@@ -51,26 +62,33 @@ body {
 }
 
 .nav-links a:hover {
-  color: #fdd835;
+  color: #C06C84;
 }
 
 .hero {
-  background-image: url('https://cdn.pixabay.com/photo/2017/06/27/08/40/bread-2448667_1280.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 210px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff8dc;
-  text-align: center;
-  padding: 20px;
+   background-image: linear-gradient(
+      rgba(250,218,221,0.7),
+      rgba(250,218,221,0.7)
+    ),
+    url('https://cdn.pixabay.com/photo/2017/06/27/08/40/bread-2448667_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5A3A3A;
+    text-align: center;
+    padding: 20px;
 }
 
 .hero-content h2 {
   font-size: 48px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.6);
+}
+.hero-content h2:hover{
+  color: #C06C84;
 }
 
 .hero-content p {
@@ -79,7 +97,7 @@ body {
 }
 
 .produtos {
-  background-color: #fffaf0;
+ background-color: #FFF8F8;
   padding: 20px 15px;
   text-align: center;
 }
@@ -99,12 +117,12 @@ body {
 }
 
 .card {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+ background-color: #FFFFFF;
+  border-radius: 14px;
+  box-shadow: 0 6px 12px rgba(232,160,176,0.25);
   padding: 20px;
   max-width: 200px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
@@ -119,18 +137,18 @@ body {
 
 .card h3 {
   margin: 0 0 10px 0;
-  color: #5d4037;
+  color: #C06C84;
 }
 
 .card p {
-  margin: 0;
-  color: #8d6e63;
+    margin: 0;
+  color: #8A4F5C;
   font-weight: bold;
 }
 
 footer {
-  background-color: #4b2e1d;
-  color: #fff8dc;
+background: linear-gradient(135deg, #E8A0B0, #C06C84);
+  color: #FFF8F8;
   text-align: center;
   padding: 20px 0;
   margin-top: 60px;
